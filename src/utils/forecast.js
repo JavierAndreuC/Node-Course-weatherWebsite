@@ -13,7 +13,8 @@ const forecast = (location, units, callback) => {
                 temperature: body.current.temperature,
                 feelslike: body.current.feelslike,
                 weatherDesc: body.current.weather_descriptions[0],
-                precipitation: body.current.precip
+                precipitation: body.current.precip,
+                humidity: body.current.humidity
             })
         }
     })
